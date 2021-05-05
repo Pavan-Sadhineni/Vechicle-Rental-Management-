@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cars4U Login Page</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="styles.css" rel="stylesheet">
+<script   src="myscripts.js"></script>
+</head>
+
+<body style="background-image: url('https://wallpaperaccess.com/full/1518929.jpg');  background-size: 100% 100%;">
+<div class="topnav">
+  <a href="home2.html">Home</a>
+  <a href="Signin.html">Signin</a>
+  <a href="Signup.html" style="background-color:red">Signup</a>
+  <a href="Aboutus.html">Aboutus</a>
+</div>
+<form     id="form" onsubmit="return validate()" action="Register"  method="post" autocomplete="off" class="form">
+<div class="contact-form ">
+<img alt="" class="avatar" src="https://i.postimg.cc/zDyt7KCv/a1.jpg">
+<h2>Sign Up</h2>
+              <div class="form-control ">
+
+                        <p>First Name</p>
+                       
+                        <input  placeholder="First Name" type="text" id="fname" name="fname" autocomplete="off" />
+                           
+                        <span id="firstname"  style="color: red"></span>
+                          </div>
+                            <div class="form-control">
+                        <p>Last Name </p><input placeholder="Last Name" type="text" name="lname" id="lname" autocomplete="off" >
+                       <span id="lastname"  style="color: red"></span>                            </div>
+                              <div class="form-control">
+<p>Email</p><input placeholder="Enter Email" type="email" id="email" name="email" autocomplete="off" >
+<span id="emailo"  style="color: red"></span>
+                    </div>
+                      <div class="form-control">
+<p>Passwrod</p><input placeholder="Enter Password" type="password" name="password" id="password" autocomplete="off">
+<span id="passwordo"  style="color: red"></span>
+                    </div>
+                    <p style="color:white;"><input type="checkbox" onclick="myFunction()" >Show Password</p>
+             
+<input type="submit" name="submit" value="submit">
+
+
+</div>
+</form>
+
+</body>
+</html>

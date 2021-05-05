@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Logo</a>
+  <a href="Addvechicle.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Add Vechicle</a>
+  <a href="add_admin.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Add Admin</a>
+  <a href="ADcurr.jsp" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Rented Vechicles</a>
+  <a href="Availablev.jsp" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Available Vechicles</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">View <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="viewusers.jsp" class="w3-bar-item w3-button">View Users</a>
+      <a href="#" class="w3-bar-item w3-button">View Admins</a>
+      <a href="DeletedV.jsp" class="w3-bar-item w3-button">Deleted Vechicles</a>
+    </div>
+  </div>
+  <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">Bookings <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="ADcurr.jsp" class="w3-bar-item w3-button">Current Bookings</a>
+      <a href="AllBookings.jsp" class="w3-bar-item w3-button">All Bookings</a>
+     
+    </div>
+  </div>
+  <a href="home2.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search">Signout</a>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#team" class="w3-bar-item w3-button">Team</a>
+    <a href="#work" class="w3-bar-item w3-button">Work</a>
+    <a href="#pricing" class="w3-bar-item w3-button">Price</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    <a href="#" class="w3-bar-item w3-button">Search</a>
+  </div>
+</div>
+<br>
+<br>
+
+<div class="container">
+  <form action="add_vech" method="post">
+
+    <div class="row">
+      <div class="col-25">
+        <label for="vid">Vechicle Id</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="vid" name="vid" placeholder="give id for vechicle">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="mo">Model</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="mo" name="mo" placeholder="Give Model name">
+      </div>
+    </div>
+   
+    <div class="row">
+      <div class="col-25">
+        <label for="imu">Image-Url</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="imu" name="imu" placeholder="paste the image path/ url" >
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="ty">Type:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="ty" name="ty" placeholder="Give fuel type.." >
+      </div>
+    </div>
+     <div class="row">
+      <div class="col-25">
+        <label for="ty">Mileage:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="Mileage" name="mileage" placeholder="Give mileage.." >
+      </div>
+    </div>
+     <div class="row">
+      <div class="col-25">
+        <label for="ty">Seating Capacity:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="sc" name="sc" placeholder="seating capacity of vechicle.." >
+      </div>
+    </div>
+     <div class="row">
+      <div class="col-25">
+        <label for="ty">Fuel Tank Capacity</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fc" name="fc" placeholder="Give fuel tank capacity.." >
+      </div>
+    </div>
+     
+     <div class="row">
+      <div class="col-25">
+        <label for="ty">Vechicle Registration number</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="vr" name="vr" placeholder="eg: AA 00 BB 0000">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="ty">Vechicle Cost Per Hour</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="vc" name="vc" placeholder="cost of vechicle per hour">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Confirm Your Identity:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="psw2" name="psw2" placeholder="Give your password here.." >
+      </div>
+    </div>
+    <div class="row" style="float:right">
+      <input  type="submit" value="Submit">
+    </div>
+  </form>
+
+</div>
+
+</body>
+</html>

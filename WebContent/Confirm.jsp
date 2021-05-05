@@ -1,0 +1,208 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+body {
+		font-family: 'Varela Round', sans-serif;
+	}
+	.modal-confirm {		
+		color: #636363;
+		width: 325px;
+		margin: 30px auto;
+	}
+	.modal-confirm .modal-content {
+		padding: 20px;
+		border-radius: 5px;
+		border: none;
+	}
+	.modal-confirm .modal-header {
+		border-bottom: none;   
+        position: relative;
+	}
+	.modal-confirm h4 {
+		text-align: center;
+		font-size: 26px;
+		margin: 30px 0 -15px;
+	}
+	.modal-confirm .form-control, .modal-confirm .btn {
+		min-height: 40px;
+		border-radius: 3px; 
+	}
+	.modal-confirm .close {
+        position: absolute;
+		top: -5px;
+		right: -5px;
+	}	
+	.modal-confirm .modal-footer {
+		border: none;
+		text-align: center;
+		border-radius: 5px;
+		font-size: 13px;
+	}	
+	.modal-confirm .icon-box {
+		color: #fff;		
+		position: absolute;
+		margin: 0 auto;
+		left: 0;
+		right: 0;
+		top: -70px;
+		width: 95px;
+		height: 95px;
+		border-radius: 50%;
+		z-index: 9;
+		background: #82ce34;
+		padding: 15px;
+		text-align: center;
+		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+	}
+	.modal-confirm .icon-box i {
+		font-size: 58px;
+		position: relative;
+		top: 3px;
+	}
+	.modal-confirm.modal-dialog {
+		margin-top: 80px;
+	}
+    .modal-confirm .btn {
+        color: #fff;
+        border-radius: 4px;
+		background: #82ce34;
+		text-decoration: none;
+		transition: all 0.4s;
+        line-height: normal;
+        border: none;
+    }
+	.modal-confirm .btn:hover, .modal-confirm .btn:focus {
+		background: #6fb32b;
+		outline: none;
+	}
+	.trigger-btn {
+		display: inline-block;
+		margin: 100px auto;
+	}
+.form-control {
+  -webkit-transition: none;
+  transition: none;
+  width: 32px;
+  height: 32px;
+  text-align: center
+}
+
+.form-control:focus {
+  color: #3F4254;
+  background-color: #ffffff;
+  border-color: #884377;
+  outline: 0;
+}
+
+.form-control.form-control-solid {
+  background-color: #F3F6F9;
+  border-color: #F3F6F9;
+  color: #3F4254;
+  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.form-control.form-control-solid:active,
+.form-control.form-control-solid.active,
+.form-control.form-control-solid:focus,
+.form-control.form-control-solid.focus {
+  background-color: #EBEDF3;
+  border-color: #EBEDF3;
+  color: #3F4254;
+  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button4 {border-radius: 12px;}
+</style>
+<body>
+  
+  <div class="mb-6 text-center">
+   <h1><b>Verification Code</b></h1><br>
+   <p>Please Enter the 6 digit verification code sent to +91**********</p><br>
+   <form action="Verify" method="post">
+  <div id="otp" class="flex justify-center">
+    <input class="m-2 text-center form-control form-control-solid rounded focus:border-blue-400 focus:shadow-outline" type="text" style="background-color:#66ccff;height:45px;width:45px" id="first"  name="first" maxlength="1" />
+    <input class="m-2 text-center form-control form-control-solid rounded focus:border-blue-400 focus:shadow-outline" type="text" style="background-color:#66ccff;height:45px;width:45px"  id="second"  name="second" maxlength="1" />
+    <input class="m-2 text-center form-control form-control-solid rounded focus:border-blue-400 focus:shadow-outline" type="text"  style="background-color:#66ccff;height:45px;width:45px" id="third" name= "third" maxlength="1" />
+    <input class="m-2 text-center form-control form-control-solid rounded focus:border-blue-400 focus:shadow-outline" type="text" style="background-color:#66ccff;height:45px;width:45px"  id="fourth" name="fourth" maxlength="1" />
+    <input class="m-2 text-center form-control form-control-solid rounded focus:border-blue-400 focus:shadow-outline" type="text"  style="background-color:#66ccff;height:45px;width:45px" id="fifth" name="fifth" maxlength="1" />
+    <input class="m-2 text-center form-control form-control-solid rounded focus:border-blue-400 focus:shadow-outline" type="text"  style="background-color:#66ccff;height:45px;width:45px" id="sixth" name="sixth" maxlength="1" />
+  </div><br>
+  <a href="#myModal" class="trigger-btn" data-toggle="modal"><button class="button button4" style="height:55px;width:150px" type="submit">Verify</button></a>
+ 
+  </form>
+</div>
+<!-- Modal HTML -->
+<div id="myModal" class="modal fade">
+	<div class="modal-dialog modal-confirm">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="icon-box">
+					<i class="material-icons">&#xE876;</i>
+				</div>				
+				<h4 class="modal-title">Awesome!</h4>	
+			</div>
+			<div class="modal-body">
+				<p class="text-center">Your booking has been confirmed. Check your email for detials.</p>
+			</div>
+			<div class="modal-footer">
+				<a href="Cars.jsp" ><button  class="btn btn-success btn-block" >OK</button></a>
+			</div>
+		</div>
+	</div>
+</div>     
+<script>
+function OTPInput() {
+	  const inputs = document.querySelectorAll('#otp > *[id]');
+	  for (let i = 0; i < inputs.length; i++) {
+	    inputs[i].addEventListener('keydown', function(event) {
+	      if (event.key === "Backspace") {
+	        inputs[i].value = '';
+	        if (i !== 0)
+	          inputs[i - 1].focus();
+	      } else {
+	        if (i === inputs.length - 1 && inputs[i].value !== '') {
+	          return true;
+	        } else if (event.keyCode > 47 && event.keyCode < 58) {
+	          inputs[i].value = event.key;
+	          if (i !== inputs.length - 1)
+	            inputs[i + 1].focus();
+	          event.preventDefault();
+	        } else if (event.keyCode > 64 && event.keyCode < 91) {
+	          inputs[i].value = String.fromCharCode(event.keyCode);
+	          if (i !== inputs.length - 1)
+	            inputs[i + 1].focus();
+	          event.preventDefault();
+	        }
+	      }
+	    });
+	  }
+	}
+	OTPInput();</script>
+</body>
+</html>

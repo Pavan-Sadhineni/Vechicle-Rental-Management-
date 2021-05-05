@@ -1,0 +1,1582 @@
+/* Scss Document */
+
+
+/*Fonts*/
+
+
+/*Colors*/
+
+
+/*Header*/
+
+.headerBand {
+    height: 70px;
+    width: 100%;
+    background: #CE2127;
+    display: table;
+    padding: 0 0 0 25px;
+    line-height: 70px;
+}
+
+.innerPage .headerBand,
+.loyalty .headerBand {
+    border-bottom: 5px solid #fff;
+}
+
+.avislogo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 70px;
+    align-items: center;
+}
+
+.avislogo img {
+    width: 95px;
+}
+
+.headerBand .avisSocial {
+    padding: 0px;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    height: 70px;
+    line-height: 70px;
+    width: 100%;
+}
+
+.headerBand .avisSocial li {
+    list-style: none;
+    display: inline-block;
+    border-right: 2px solid #c9001b;
+    text-align: center;
+    width: calc(100%/7);
+}
+
+.headerBand .avisSocial li a {
+    color: #ffffff;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: 'Avenir-Medium';
+    text-align: center;
+}
+
+.headerBand .avisSocial li a:hover {
+    text-decoration: underline;
+}
+
+.headerBand .avisSocial li.international-login {
+    position: relative;
+    right: -20px;
+    background: #a81e2a;
+}
+
+.headerBand .avisSocial li.international-login li {
+    border-right: 0;
+    width: 100%;
+}
+
+.headerBand .avisSocial li.store {
+    width: 10%;
+    border-right: 0;
+}
+
+.headerBand .avisSocial li:last-child {
+    border-right: 0;
+}
+
+.headerBand .avisSocial li img {
+    margin-left: 20px;
+}
+
+.headerBand .avisSocial li.helpNo .fa {
+    background: #fff;
+    color: #ce2127;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.headerBand .login-menu {
+    top: 50px !important;
+    left: 30px;
+}
+
+.headerBand .login-menu li {
+    line-height: 30px;
+}
+
+.headerBand .login-menu a {
+    color: #494848 !important;
+}
+
+.headerBand .login-menu a:hover {
+    color: #ce2127 !important;
+}
+
+.headerBand .login li .caret {
+    border-top: 4px solid #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*BAnner*/
+
+.avisBanner {
+    position: relative;
+    height: 387px;
+    width: 100%;
+    background-image: url(../images/bannerbg.jpg);
+    background-size: cover;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+}
+
+.avisBannerContainer {
+    width: 100%;
+    margin: 5% 0;
+    display: block;
+}
+
+.bannertablevel .level1 {
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 100%;
+    list-style-type: none;
+}
+
+.bannertablevel .level1 li {
+    float: left;
+    width: 50%;
+    text-align: center;
+    display: block;
+    border-right: 1px solid #ce2127;
+}
+
+.bannertablevel .level1 li a {
+    border: 0;
+    background: #2b2b2b;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: "Avenir-Roman";
+    line-height: 50px;
+    letter-spacing: 0.3px;
+    padding: 0;
+    display: block;
+}
+
+.bannertablevel .level1 li:first-child a {
+    border-radius: 0px 0px 0px 0;
+}
+
+.bannertablevel .level1 li:last-child a {
+    border-radius: 0px 0px 0px 0;
+}
+
+.bannertablevel .level1 li a span {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    line-height: 30px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.bannertablevel .level1 li a span.india {
+    background: url(../images/india.png) 0 0 no-repeat;
+}
+
+.bannertablevel .level1 li a span.intetnat {
+    background: url(../images/international.png) 0 0 no-repeat;
+}
+
+.bannertablevel .level1 li.active>a,
+.bannertablevel .level1 li.active>a:focus,
+.bannertablevel .level1 li.active>a:hover {
+    background: #ce2127;
+    border: 0;
+    color: #fff;
+}
+
+.bannertablevel .level1 li:last-child {
+    border-right: 0;
+}
+
+.level2 {
+    list-style-type: none;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.level2 li {
+    border-right: 1px solid #ce2127;
+    position: relative;
+}
+
+.level2 li a {
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+    font-family: "Avenir-Roman";
+    line-height: 40px;
+    text-align: center;
+    display: block;
+    -webkit-transition: all 250ms ease-in-out 0s;
+    transition: all 250ms ease-in-out 0s;
+}
+
+.level2 li a:hover,
+.level2 li a.active a {
+    background: #373737;
+    color: #ce2127;
+}
+
+.level2 li a .arrowDown {
+    width: 20px;
+    height: 13px;
+    display: inline-block;
+    background: url(../images/arrow-new.png) -10px 0 no-repeat;
+    margin-left: 50px;
+    vertical-align: middle;
+}
+
+.level2 li a:hover .arrowDown {
+    background-position: -10px -22px;
+}
+
+.level2 li:last-child {
+    border-right: 0;
+}
+
+.level2 li:last-child:after {
+    content: "";
+    width: 1px;
+    background: #1a1a1a;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    top: 0;
+}
+
+.level2 li.active a {
+    background: #373737;
+    color: #ce2127;
+}
+
+.level2 li.active .arrowDown {
+    background-position: -10px -22px;
+}
+
+.level3 {
+    list-style-type: none;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.level3 li a {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 12px;
+    display: block;
+    color: #fff;
+}
+
+.level3 li a:hover {
+    color: #ce2127;
+}
+
+.level3 li.active a {
+    color: #ce2127;
+}
+
+.avismainBar {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px 0 30px;
+    width: 100%;
+    height: 150px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.avismainBar .note {
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+.aviSelf {
+    margin-top: 10px;
+}
+
+.avisStandardForm {
+    margin-top: 10px;
+}
+
+.avisformStyle {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.avisformStyle li {
+    float: left;
+    width: 21%;
+    padding: 0px 5px;
+}
+
+.avisformStyle li:first-child {
+    padding-left: 0;
+}
+
+.avisformStyle li:last-child {
+    padding-right: 0;
+}
+
+.avisformStyle li.submitBtn {
+    width: 15%;
+    margin-left: 1%;
+}
+
+.avisformStyle .inputStyle {
+    border: 1px solid #adadab;
+    background-color: #fff;
+    line-height: 30px;
+    height: 40px;
+    width: 100%;
+    padding: 5px 30px 5px 8px;
+    color: #000;
+    font-family: "Avenir-Roman";
+    font-size: 11px;
+    text-transform: uppercase;
+    outline: none;
+    border-radius: 5px;
+}
+
+.avisformStyle .inputStyle.email {
+    background: #fff url(../images/chauffEmail.png) 95% 50% no-repeat;
+}
+
+.avisformStyle .inputStyle.phone {
+    background: #fff url(../images/chauffPhone.png) 95% 50% no-repeat;
+    background-size: 8%;
+}
+
+.avisformStyle .inputStyle.name {
+    background: #fff url(../images/chauffname.png) 95% 50% no-repeat;
+}
+
+.avisformStyle .inputStyle.locMark {
+    background: #fff url(../images/markloc.png) 95% 50% no-repeat;
+}
+
+.avisformStyle .inputStyle.inputDate {
+    background: #fff url(../images/calicon.png) 95% 50% no-repeat;
+}
+
+.avisformStyle select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(../images/arrow-black.png);
+    background-color: #fff;
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+}
+
+.searchSubmit {
+    background: #ce2127;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    text-transform: uppercase;
+    text-align: center;
+    font: 12px/20px "Avenir-Medium";
+    padding: 9px 40px 8px;
+    position: relative;
+    white-space: nowrap;
+    height: 40px;
+    border-radius: 5px;
+    display: block;
+}
+
+.searchSubmit:hover,
+.searchSubmit:focus,
+.searchSubmit:visited {
+    color: #fff;
+}
+
+.inputStyle::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #000;
+}
+
+.inputStyle::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #000;
+}
+
+.inputStyle:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #000;
+}
+
+.inputStyle:-moz-placeholder {
+    /* Firefox 18- */
+    color: #000;
+}
+
+.avisChauf li.trasferaddress {
+    width: 41%;
+}
+
+.chauffOutstation {
+    padding: 0px 30px;
+}
+
+.chauffOutstation .avisformStyle li {
+    width: 16%;
+}
+
+.chauffOutstation p.note {
+    margin: 0;
+}
+
+.multiCitycheck .checkbox-custom-label {
+    color: #fff;
+}
+
+.vacationBar {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+}
+
+.vacationBar h2 {
+    font-size: 16px;
+    margin: 0;
+    font-family: "Avenir-Heavy";
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+.vacationBar .vacationList {
+    display: block;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.vacationBar .vacationList li {
+    display: inline-block;
+    width: inherit;
+    text-align: center;
+    font-size: 12px;
+    height: inherit;
+    padding: 0px 5px;
+    color: #000;
+}
+
+.vacationBar .vacationList li P {
+    color: #fff;
+    margin: 0;
+}
+
+.vacationBar .vacationList li span {
+    background: url(../images/vacationstrip.png) 0 0 no-repeat;
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 20px auto 5px;
+}
+
+.vacationBar .vacationList li span.pricing {
+    background-position: 0 0;
+}
+
+.vacationBar .vacationList li span.desk {
+    background-position: -80px 0;
+}
+
+.vacationBar .vacationList li span.pan {
+    background-position: -160px 0;
+}
+
+.vacationBar .vacationList li span.complimentary {
+    background-position: -240px 0;
+}
+
+.vacationBar .vacationList li span.milage {
+    background-position: -319px 0;
+    width: 45px;
+}
+
+.vacationBar .vacationList li.submitBtn span {
+    background: #faf9f7;
+}
+
+.vacationProceed {
+    margin-top: 45px;
+}
+
+.internationalLevel .level2 li {
+    width: 50%;
+    float: left;
+}
+
+.internationalLevel .avismainBar {
+    height: 160px;
+}
+
+.interSelfdrive {
+    padding: 0px 20px 0 40px;
+}
+
+.interSelfdrive .avisformStyle li {
+    width: 16%;
+}
+
+.interSelfdrive .avisformStyle li.interLoc {
+    width: 25%;
+}
+
+.interbottomForm {
+    padding: 15px 0;
+}
+
+.interbottomForm .checkbox-custom-label {
+    color: #fff;
+}
+
+.interbottomForm .checkbox-custom+.checkbox-custom-label:before {
+    background: transparent;
+    width: 20px;
+    height: 18px;
+    border: 1px solid #ce2127;
+    border-radius: 0;
+}
+
+.interbottomForm .discountNo {
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    border: 1px solid #ce2127;
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+}
+
+.interbottomForm .samePickup {
+    padding: 0px 10px 0 60px;
+}
+
+.interbottomForm .samePickup .checkbox-custom-label {
+    text-indent: -35px;
+}
+
+
+
+
+
+
+
+
+
+
+/* .tooltip-tax {
+    position: absolute;
+    right: 0;
+    top: 0px;
+    cursor: pointer;
+    display: inline-block;
+    width: 22px;
+}
+
+.tooltip-tax ul {
+    position: absolute;
+    background: #fff;
+    border-radius: 5px;
+    margin: 0;
+    list-style-type: none;
+    display: none;
+    padding: 15px 10px;
+    -webkit-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.22);
+    right: 0;
+    z-index: 99;
+    width: 200px;
+}
+
+.tooltip-tax ul li {
+    border: none;
+    padding: 0;
+}
+
+.tooltip-tax ul li p {
+    font-size: 13px;
+    text-transform: none;
+    margin: 0;
+    font-family: "Avenir-Book";
+}
+
+.tooltip-tax span {
+    float: none;
+    width: 22px !important;
+    height: 22px;
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+    padding: 0;
+    color: #fff;
+    font-size: 12px;
+    border: 1px solid #ce2127;
+    font-weight: 700;
+    background: #ce2127;
+    line-height: 22px;
+}
+
+.tooltip-tax span:hover+ul {
+    display: block;
+}
+ */
+
+.vactioncross {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.vactioncross img {
+    width: 23px;
+}
+
+.internationalChaufferField {
+    padding: 0px 20px;
+}
+
+.internationalChaufferField .avisformStyle li {
+    width: 25%;
+}
+
+.avisformStyle .inputStyle.cntListIsdCode {
+    border-right: 0;
+    border-radius: 5px 0px 0px 5px !important;
+    width: 40px !important;
+}
+
+.avisformStyle select.cuntListSlct {
+    border-radius: 5px 0 0px 5px !important;
+    background-position: 90% 50%;
+}
+
+.avisformStyle .inputStyle.cntListNumber {
+    width: 179px !important;
+    border-radius: 0 5px 5px 0px !important;
+    left: 60px;
+}
+
+.chaufferInternationalBanner .avisBannerContainer {
+    margin: 4% 0;
+}
+
+.chaufferInternationalBanner .internationalLevel .avismainBar {
+    height: 180px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Footer New*/
+
+.avisFooter {
+    background: #CE2127;
+    padding: 50px 0px 40px;
+}
+
+.avisFooterSec {
+    margin-right: 30px;
+}
+
+.avisFooterSec h2 {
+    text-transform: uppercase;
+    color: #fff;
+    font: 12px/28px 'Avenir-Roman';
+    letter-spacing: 0.6px;
+    margin: 0 0 0px 0;
+    border-bottom: 1px solid #ba090f;
+    padding: 10px 0px;
+}
+
+.avisFooterSec h2 a {
+    color: #fff;
+    display: block;
+}
+
+.avisFooterSec h3 {
+    text-transform: uppercase;
+    color: #fff;
+    font: 14px/28px 'Avenir-Black';
+    letter-spacing: 0.6px;
+    margin: 0 0 30px 0;
+}
+
+.avisFooterSec .panel-group {
+    margin: 0;
+}
+
+.avisFooterSec .panel-group .panel {
+    border: 0;
+    background: no-repeat;
+}
+
+.avisFooterSec .panel-group .panel+.panel {
+    margin-top: 0px;
+}
+
+.avisFooterSec .panel-group h4 {
+    margin: 0 0px 0;
+    border-bottom: 1px solid #ba090f;
+    padding: 10px 0px;
+}
+
+.avisFooterSec .panel-group h4 a {
+    text-transform: uppercase;
+    color: #fff;
+    font: 12px/28px 'Avenir-Roman';
+    display: block;
+}
+
+.avisFooterSec .panel-group h4 a:hover,
+.avisFooterSec h2 a:hover {
+    text-decoration: underline;
+}
+
+.avisFooterSec .panel-group h4 a .fa {
+    float: right;
+    margin-top: 2px;
+    font-size: 24px;
+}
+
+.avisFooterSec ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.avisFooterSec ul li {
+    border-top: 1px solid #ba090f;
+}
+
+.avisFooterSec ul li:first-child {
+    border-top: 0;
+}
+
+.avisFooterSec ul li:last-child {
+    border-bottom: 1px solid #ba090f;
+}
+
+.avisFooterSec ul li a {
+    color: #fff;
+    font: 12px/50px 'Avenir-Medium';
+    letter-spacing: 0.25px;
+    text-transform: uppercase;
+    display: block;
+    /* background: url(../images/footerarrow.png) no-repeat 98% center; */
+}
+
+
+.getInTouch {
+    margin-bottom: 20px;
+}
+
+.getInTouch a, .getInTouch .footerCall {
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Avenir-Medium';
+}
+
+.getInTouch .fa {
+    background: #a81e2a;
+    font-size: 16px;
+    padding: 0px;
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.getInTouch .footerCall {
+    margin-left: 40px;
+    letter-spacing: 0.5px;
+}
+
+.footerContactForm .footerInput {
+    font-size: 12px;
+    padding: 0 10px 0px 0;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: 0 0;
+    color: #fdd2d2;
+    font-weight: 300;
+    letter-spacing: .6px;
+}
+
+.footerContactForm .footerInput:focus {
+    outline: 0
+}
+
+.footerContactForm select.footerInput option {
+    color: #333;
+}
+
+.footerContactForm label {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    transition: .2s ease all;
+    -moz-transition: .2s ease all;
+    -webkit-transition: .2s ease all;
+    letter-spacing: .6px;
+    text-transform: uppercase;
+}
+
+.footerContactForm .bar {
+    position: relative;
+    display: block;
+    width: 100%;
+    top: 2px
+}
+
+.footerContactForm .bar:after,
+.footerContactForm .bar:before {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #a81e2a;
+    transition: .2s ease all;
+    -moz-transition: .2s ease all;
+    -webkit-transition: .2s ease all
+}
+
+.footerContactForm .bar:before {
+    left: 50%
+}
+
+.footerContactForm .bar:after {
+    right: 50%
+}
+
+.footerContactForm .footerInput:focus~.bar:after,
+.footerContactForm .footerInput:focus~.bar:before {
+    width: 50%
+}
+
+.footerContactForm .footerInput:focus~.highlight {
+    -webkit-animation: inputHighlighter .3s ease;
+    animation: inputHighlighter .3s ease
+}
+
+@-webkit-keyframes inputHighlighter {
+    from {
+        background: #ce2127
+    }
+    to {
+        width: 0;
+        background: 0 0
+    }
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #ce2127
+    }
+    to {
+        width: 0;
+        background: 0 0
+    }
+}
+
+.footerContactForm .countryCode select {
+    position: absolute;
+    width: 67px !important;
+}
+
+.footerContactForm .mobilenumber {
+    padding-left: 67px;
+    margin-top: 1px;
+}
+
+.footerContactForm .footersend {
+    float: right;
+    background: 0 0;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: .6px;
+    padding: 8px 40px;
+    outline: 0;
+    margin-top: 0px;
+    display: inline-block;
+}
+
+.footerContactForm .form-group {
+    margin-bottom: 40px;
+}
+
+.footerContent {
+    background: #eeeeee;
+}
+
+.footercontSec {
+    padding: 20px 0px;
+    position: relative;
+}
+
+.footercontSec h2 {
+    font: 20px/36px 'Avenir-Black';
+    color: #868383;
+    text-transform: uppercase;
+}
+
+.footercontSec p {
+    color: #969696;
+    line-height: 24px;
+}
+
+.footercontSec.dividetop:after {
+    content: "";
+    border-top: 1px solid #d1d1d1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: -170px 0px 0 0 #d1d1d1, 170px 0px 0 0 #d1d1d1;
+}
+
+.footerseeMoreLink {
+    color: #fff;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.footerseeMoreLink .fa {
+    display: block;
+    font-size: 14px;
+}
+
+.footerseeMoreLink:hover,
+.footerseeMoreLink:focus,
+.footerseeMoreLink:visited {
+    color: #fff;
+}
+
+.newupdatewhy {
+    padding: 40px 0;
+}
+
+.newupdatewhy.why .block-5 {
+    margin: 30px 0 0;
+}
+
+.newupdateapp {
+    padding: 50px 0 40px;
+}
+
+@media only screen and (max-width: 3450px) and (min-width: 1281px) {
+    .container {
+        max-width: 1280px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1280px) {
+    .avismainBar {
+        height: 170px;
+    }
+    .avisformStyle .inputStyle.cntListNumber {
+        width: 156px !important;
+    }
+}
+
+@media (max-width: 1140px) {
+
+    .avisformStyle .inputStyle.cntListNumber {
+        width: 115px !important;
+    }
+    .headerBand .avisSocial li a {
+        font-size: 12px;
+    }
+    .headerBand .avisSocial li.helpNo {
+        width: 16%;
+    }
+
+    .headerBand .avisSocial li.store {
+        width: 12%;
+    }
+    .headerBand .avisSocial li img {
+        margin-left: 10px;
+    }
+    .headerBand .avisSocial li.international-login li {
+        padding: 0 5px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .headerBand .avisSocial li a {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 980px) and (min-width: 768px) {
+    .avisChauf .col-md-10.col-md-offset-1.pd-0 {
+        padding-left: 15px !Important;
+        padding-right: 15px !Important;
+    }
+    .avisStandardForm {
+        padding: 0 10px;
+    }
+    .avisformStyle .inputStyle.cntListNumber {
+        width: 96px !important;
+        padding: 5px 20px 5px 8px;
+    }
+    .avisformStyle .inputStyle.phone {
+        background-size: 10%;
+    }
+    .avisformStyle li.submitBtn {
+        margin-left: 0;
+    }
+    .searchSubmit {
+        padding: 9px 30px 8px;
+    }
+    .chauffOutstation {
+        padding: 0px 10px;
+    }
+    .bannertablevel .level1 li a {
+        font-size: 16px;
+    }
+    .level3 li a {
+        font-size: 10px;
+    }
+    .avismainBar {
+        height: 170px;
+    }
+    .interbottomForm .checkbox-custom-label {
+        font-size: 10px;
+    }
+    .interbottomForm .checkbox-custom+.checkbox-custom-label:before {
+        margin-right: 5px;
+    }
+    .interbottomForm .samePickup {
+        padding: 0px 10px 0 30px;
+    }
+    .interbottomForm .samePickup .checkbox-custom-label {
+        text-indent: -25px;
+    }
+    .interSelfdrive .avisformStyle li.interLoc,
+    .interSelfdrive .avisformStyle li {
+        width: 20%;
+    }
+    .interbottomForm .discountNo {
+        padding: 8px 5px;
+        font-size: 10px;
+    }
+    .headerBand .avisSocial li a {
+        font-size: 10px;
+    }
+    .headerBand .avisSocial li.helpNo .fa {
+        display: none;
+    }
+    .headerBand .avisSocial li.international-login {
+        width: 16%;
+        right: -15px;
+    }
+    .getInTouch a.footerCall {
+        margin: 0px;
+    }
+    .footerContactForm label {
+        font-size: 10px;
+    }
+    .avisFooterSec {
+        margin-right: 0;
+    }
+    .avisFooterSec .panel-group h4 a,
+    .avisFooterSec h2 {
+        font: 10px/28px 'Avenir-Roman';
+    }
+    .level2 li a .arrowDown {
+        margin-left: 10px;
+    }
+    .headerBand {
+        padding: 0;
+    }
+    .headerBand .avisSocial li:nth-child(2) {
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 0px) {
+    .headerBand {
+        padding: 0;
+    }
+    .avis-mobile-header {
+        height: 42px;
+        border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        padding: 0;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box
+    }
+
+    .avis-mobile-menu-box {
+        width: 100%;
+        height: 42px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+
+    .avis-mobile-menu-box .avis-mobile-menu-icon {
+        width: 26px;
+        height: 18px;
+        position: relative
+    }
+
+    .avis-mobile-menu-box .avis-mobile-menu-icon span {
+        width: inherit;
+        height: 2.5px;
+        background-color: #fff;
+        display: block;
+        position: absolute;
+        left: 0
+    }
+
+    .avis-mobile-menu-box .avis-mobile-menu-icon span:nth-child(1) {
+        top: 0
+    }
+
+    .avis-mobile-menu-box .avis-mobile-menu-icon span:nth-child(2) {
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%)
+    }
+
+    .avis-mobile-menu-box .avis-mobile-menu-icon span:nth-child(3) {
+        bottom: 0;
+        height: 3px;
+    }
+    .avis-mobile-header-offer {
+        width: 100%;
+        height: 42px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .avis-mobile-menu {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: 100%;
+        background: #fff;
+        z-index: 999999999;
+        overflow: hidden;
+        max-height: 100vh;
+        overflow-y: scroll;
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+        -webkit-transition: all .3s cubic-bezier(0, 0, .2, 1);
+        transition: all .3s cubic-bezier(0, 0, .2, 1);
+        border-radius: 0px 10px 10px 0px;
+    }
+    .avis-mobile-menu.open {
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+    .avis-mobile-menu .avis-head-logo {
+        background: #ce2127;
+        height: 65px;
+        padding-left: 20px;
+        position: relative
+    }
+    .avis-mobile-menu .avis-head-logo .lazy {
+        width: 100%;
+        margin-top: 0;
+        max-width: 104px;
+        height: 65px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left center
+    }
+    .avis-mobile-menu .avis-head-logo .icon-close {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        width: 24px;
+        height: 24px;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%)
+    }
+    .avis-mobile-menu .avis-head-logo .icon-close:after,
+    .avis-mobile-menu .avis-head-logo .icon-close:before {
+        content: "";
+        width: 100%;
+        background: #fff;
+        height: 2px;
+        position: absolute;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        top: 50%
+    }
+    .avis-mobile-menu .avis-head-logo .icon-close:after {
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg)
+    }
+    .avis-mobile-menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        border-top: 10px solid #f4f4f4
+    }
+    .avis-mobile-menu ul li {
+        border-bottom: 1px solid #d6d6d6;
+        height: 60px;
+        padding: 15px 0
+    }
+    .avis-mobile-menu ul li a {
+        display: block;
+    }
+    .avis-mobile-menu ul li .lazy {
+        width: 32px;
+        height: 32px;
+        display: inline-block;
+        margin: 0 7px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left center
+    }
+    .avis-mobile-menu ul li .lazy+span {
+        color: #333;
+        font-size: 14px;
+        top: -11px;
+        position: relative;
+        text-transform: capitalize;
+    }
+    .modify-body {
+        background-color: #f4f4f4!important
+    }
+    .mobile_footer {
+        background: #ce2127;
+        height: 20px;
+        margin-top: 30px;
+    }
+    .avis-mobile-offer-icon {
+        color: #fff;
+        text-transform: uppercase;
+        border: 1px solid #fff;
+        text-align: center;
+        padding: 2px 7px;
+        font-size: 12px;
+        margin: 12px 0px 0;
+        display: inline-block;
+        font-family: 'Avenir-Roman';
+        float: right;
+        line-height: 14px;
+        border-radius: 4px;
+    }
+    .mobileHome {
+        font-size: 30px;
+        line-height: 7px;
+        display: block;
+        color: #fff;
+        margin: 5px 0px 0px;
+    }
+    .mobileHome:hover,
+    .mobileHome:visited,
+    .mobileHome:focus {
+        color: #fff
+    }
+}
+
+
+
+/*Radio Button on searching panel*/
+
+.level2 li a .searchRadio,
+.level3 li a .searchRadio {
+    position: relative;
+}
+
+.level2 li a .searchRadio:before,
+.level3 li a .searchRadio:before {
+    content: "";
+    display: inline-block;
+    border: 1px solid #d4002a;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    position: absolute;
+    left: -25px;
+    top: 2px;
+}
+
+.level2 li.active a .searchRadio:after,
+.level3 li.active a .searchRadio:after {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #d4002a;
+    border-radius: 50%;
+    position: absolute;
+    left: -22px;
+    top: 5px;
+}
+
+@media only screen and (max-width: 980px) and (min-width: 768px) {
+    .level3 li a .searchRadio:before {
+        width: 10px;
+        height: 10px;
+        left: -12px;
+        top: 2px;
+    }
+    .level3 li.active a .searchRadio:after {
+        width: 6px;
+        height: 6px;
+        left: -10px;
+        top: 4px;
+    }
+}
+
+
+
+/*Landing page header update css only*/
+
+.LandingheaderLogoBand {
+    width: 100%;
+    height: 80px;
+    display: table;
+    background: #ce2127;
+}
+
+@media only screen and (max-width: 767px) and (min-width: 0px) {
+    .LandingheaderLogoBand {
+        height: 40px;
+        border-top: 2px solid #fff;
+    }
+    .LandingheaderLogoBand img {
+        width: 60px;
+    }
+}
+
+
+
+/*without red version header*/
+
+
+/*.LandingPageHeaderOnly{
+        display: none; 
+    }
+    .LandingPageHeaderOnly .headerBand {
+        height: 50px;
+        line-height: 50px;
+        border-bottom: 2px solid #d5d5d5;
+        background: #fff;
+    }
+
+        .LandingPageHeaderOnly .headerBand .avisSocial {
+            height: 50px;
+            line-height: 50px;
+            justify-content: flex-end;
+        }
+
+            .LandingPageHeaderOnly .headerBand .avisSocial li {
+                position: relative;
+                padding: 0 15px;
+                border-right: 0;
+                width: auto;
+            }
+
+    .LandingPageHeaderOnly .headerBand .avisSocial li:after {
+        position: absolute;
+        content: "";
+        height: 25px;
+        right: 0;
+        top: 50%;
+        width: 1px;
+        background: #d5d5d5;
+        transform: translateY(-50%);
+    }
+    .LandingPageHeaderOnly .headerBand .avisSocial li:last-child:after{
+        background:none;
+    }
+    .LandingPageHeaderOnly .headerBand .avisSocial li a {
+        color: #333;
+    }
+    .LandingPageHeaderOnly .headerBand .avisSocial li.international-login {
+        background:none;
+    }
+    .LandingPageHeaderOnly .headerBand .avisSocial li.international-login li {
+        padding:0;
+    }
+    .LandingPageHeaderOnly .headerBand .avisSocial li.store {
+        padding-left:0;
+    }
+    .LandingPageHeaderOnly .headerBand .login-menu{
+            left: 0;
+    }
+    .headerBand .login-menu li{
+
+    }
+    
+        .LandingPageHeaderOnly .headerLogoBand .LandingLogo {
+            display: flex;
+            align-items: center;
+            height: 55px;
+        }
+        .LandingPageHeaderOnly .bandRightButton {
+            float: right;
+            text-align: center;
+        }
+    .LandingPageHeaderOnly .bandRightButton a {
+        background:#CE2127;
+        color:#fff;
+        text-transform:uppercase;
+        font-size:14px;
+        font-family:'Avenir-Medium';
+        text-align:center;
+        border-radius:20px;
+        padding:5px 25px;
+        display:table;
+        margin:0 auto;
+    }
+    .LandingPageHeaderOnly .bandRightButton span{
+        display:block;
+        color:#CE2127;
+        margin-top:5px;
+    }*/
+.googlebtn {
+    background: #dd4a39 url(../images/googleNew.png) no-repeat;
+    background-size: 10px;
+}
+
+.facebookbtn {
+    background: #3b5a95 url(../images/fb.png) no-repeat;
+}
+
+
+.followusLogin .googlebtn {
+    background-position: 14px 10px;
+}
+
+.followusLogin .facebookbtn {
+    background-position: 7px 6px;
+    margin-right: 0px !important;
+}
+
+.or_mid {
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    color: #000;
+    margin-top: 15px;
+    display: block;
+}
+
+    .or_mid span {
+        position: relative;
+    }
+
+        .or_mid span::before {
+            width: 17px;
+            background: #757474;
+            height: 2px;
+            position: absolute;
+            content: '';
+            left: -22px;
+            top: 8px;
+        }
+
+        .or_mid span::after {
+            width: 17px;
+            background: #757474;
+            height: 2px;
+            position: absolute;
+            content: '';
+            right: -22px;
+            top: 8px;
+        }

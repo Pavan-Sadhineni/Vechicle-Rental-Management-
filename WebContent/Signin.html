@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cars4U Login Page</title>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
+</head>
+<body style="background-image: url('https://wallpaperaccess.com/full/1518929.jpg');  background-size: 100% 100%;">
+<div class="topnav">
+   <img align="left" height="50" src="s28.png"/>
+  <a href="home2.html" >Home</a>
+  <a href="Signin.html" style="background-color:red">Signin</a>
+  <a href="Signup.html">Signup</a>
+  <a href="Aboutus.html">Aboutus</a>
+</div>
+
+	<div class="contact-form">
+	
+		<img alt="" class="avatar" src="https://i.postimg.cc/zDyt7KCv/a1.jpg">
+		<h2>Sign in</h2>
+		<form   name="form" action="Login" method="post" class="form">
+			 <div class="form-control">
+			<p>Email</p><input placeholder="Enter Email" type="email" name="email" autocomplete="off"   >
+			<i class="fa fa-check-circle blue-color" aria-hidden="true"></i>
+                        <i class="fa fa-exclamation-circle" ></i><br>
+                        <small>errormsg</small>
+                    </div>
+                      <div class="form-control">
+			<p>Passwrod</p><input placeholder="Enter Password" type="password" name="password" > 
+			<i class="fa fa-check-circle blue-color" aria-hidden="true"></i>
+                        <i class="fa fa-exclamation-circle" ></i><br>
+                        <small>errormsg</small>
+                    </div>
+                    <p style="color:white;"><input type="checkbox" onclick="myFunction()" >Show Password</p>
+             
+			<input type="submit" name="submit">
+			
+			
+		</form>
+	</div>
+</body>
+</html>
